@@ -1,0 +1,134 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Digital Profile – Connex</title>
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg,#667eea,#764ba2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.card {
+    background: white;
+    border-radius: 25px;
+    padding: 40px 30px;
+    box-shadow: 0 25px 60px rgba(0,0,0,0.3);
+    text-align: center;
+    width: 360px;
+}
+
+.logo {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border: 4px solid #fff;
+}
+
+h1 {
+    font-size: 26px;
+    margin-bottom: 5px;
+}
+
+/* Bio */
+.bio {
+    font-size: 15px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+/* Save contact button */
+.save-contact {
+    display: block;
+    margin-bottom: 20px;
+    padding: 12px;
+    border-radius: 10px;
+    background: linear-gradient(45deg,#6A5ACD,#836FFF);
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.social-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.social-buttons a {
+    display: block;
+    padding: 14px;
+    border-radius: 12px;
+    font-size: 17px;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+}
+
+.phone { background: linear-gradient(45deg,#34A853,#66BB6A); }
+.instagram { background: linear-gradient(45deg,#E1306C,#FF6090); }
+.tiktok { background: linear-gradient(45deg,#000000,#333333); }
+.facebook { background: linear-gradient(45deg,#1877F2,#63A4FF); }
+.snapchat { background: linear-gradient(45deg,#FFFC00,#FFF700); color:#fff; }
+.gmail { background: linear-gradient(45deg,#D93025,#EA4335); }
+.maps { background: linear-gradient(45deg,#FF5733,#FF6F50); }
+
+</style>
+</head>
+
+<body>
+
+<div class="card">
+
+    <!-- Profile image -->
+    <img src="GoldenSeat.jpg" class="logo" alt="Profile Image">
+
+    <!-- Full name -->
+    <h1>Golden Seat</h1>
+
+    <!-- Bio -->
+    <div class="bio">
+       الأناقة تبدأ من أريكتك
+  أرائك فاخرة تجمع بين الراحة والجمال 
+       توصيل لكل الولايات
+    </div>
+
+    <!-- Save Contact -->
+    <a href="data:text/vcard;charset=utf-8,
+BEGIN:VCARD
+VERSION:3.0
+N:Golden;Seat
+FN:Golden Seat
+TEL:0666.62.94.73
+EMAIL:goldenseat@gmail.com
+END:VCARD" 
+    class="save-contact" download="contact.vcf">
+        Save Contact
+    </a>
+
+    <div class="social-buttons">
+
+        <a href="tel:0666.62.94.73" class="phone">Phone</a>
+        <a href="https://www.instagram.com/goldenseat34" class="instagram">Instagram</a>
+        <a href="https://www.tiktok.com/@goldenseat34" class="tiktok">TikTok</a>
+        <a href="https://www.facebook.com/profile.php?id=61583380845334" class="facebook">Facebook</a>
+        <a href="#" class="snapchat">Snapchat</a>
+        <a href="mailto:goldenseat@gmail.com" class="gmail">Gmail</a>
+        <a href="#" class="maps">Location</a>
+
+    </div>
+</div>
+
+</body>
+</html>
+
